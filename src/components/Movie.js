@@ -7,6 +7,9 @@ const Movie = (props) => {
       <div className="movie-text">
         <h2>{props.movie.title}</h2>
         <p>{props.movie.year}</p>
+        <button onClick={() => props.handleCounterIncrement()}>
+          Pump it up!
+        </button>
       </div>
     </div>
   )
